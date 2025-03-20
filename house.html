@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дом в HTML</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #87CEEB;
+        }
+
+        .house {
+            width: 200px;
+            height: 200px;
+            background-color: #8B4513;
+            position: relative;
+            border-radius: 10px;
+        }
+
+        .roof {
+            width: 0;
+            height: 0;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-bottom: 100px solid #B22222;
+            position: absolute;
+            top: -100px;
+            left: 0;
+        }
+
+        .door {
+            width: 50px;
+            height: 80px;
+            background-color: #654321;
+            position: absolute;
+            bottom: 10px;
+            left: 75px;
+            border-radius: 5px;
+        }
+
+        .window {
+            width: 40px;
+            height: 40px;
+            background-color: #ADD8E6;
+            position: absolute;
+        }
+
+        .window.left {
+            top: 40px;
+            left: 20px;
+        }
+
+        .window.right {
+            top: 40px;
+            right: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="house">
+        <div class="roof"></div>
+        <div class="window left"></div>
+        <div class="window right"></div>
+        <div class="door"></div>
+    </div>
+</body>
+</html>
